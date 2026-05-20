@@ -37,7 +37,7 @@ from telegram.constants import ParseMode
 import pytz
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
-BOT_TOKEN = "8785922402:AAGh6y7uRm_OafapVz3nKOiEeeW9IgFZYrI"          # BotFather se milega
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")          # BotFather se milega
 CHANNEL_ID = "@happymoney07"      # ya -100xxxxxxxxxx numeric ID
 ADMIN_IDS = [1459165268]                    # Apna Telegram user ID daalo
 TIMEZONE = "Asia/Kolkata"                  # Apna timezone
